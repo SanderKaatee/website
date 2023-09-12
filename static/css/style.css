@@ -45,16 +45,31 @@ section {
 a,
 a:link {
     color: rgb(54, 54, 54);
+    font-weight: bold;
+    text-decoration: underline;
 }
+
+
 a:hover,
 a:focus,
 a:visited {
     color: rgb(121, 121, 121);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Override styles for menu items */
+.nav-item a:link,
+.nav-item a:visited,
+.nav-item a:hover,
+.nav-item a:active {
+    font-weight: normal;
     text-decoration: none;
 }
+
 .vcenter {
     position: relative;
-    top: 50%;
+    top: 40%;
     width: 50%;
     margin: 0 auto;
     transform: translateY(-50%);
