@@ -14,9 +14,9 @@ def about():
 def credits():
     return render_template('credits.html')
 
-@app.route('/work')
-def work():
-    return render_template('work.html')
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
 
 @app.route('/music')
 def music():

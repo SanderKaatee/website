@@ -8,27 +8,31 @@ ABOUT|Sander Kaatee
 <section id="about">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+        <div class="col-md-3">
+          <h2>Who am I?</h2>
+        </div>
+        <div class="col-md-9">
+          <p>
+              My name is Sander Kaatee (born 1996). I hold a Bachelor's degree in Artificial Intelligence from the University of Groningen. 
+              I've been producing music since the age of 14, some of which you can <a href="{{ url_for('music') }}">listen to and read about on my music page</a>. 
+              In addition to music production, I also engage in programming projects that interest me. You can explore these in <a href="{{ url_for('projects') }}">my projects section</a>.
+              You're welcome to <a href="{{ url_for('static', filename='docs/CV.pdf') }}">view my CV here</a> or 
+              <a href="https://www.linkedin.com/in/sander-kaatee-a598a5156/">check out my LinkedIn profile</a>. 
+              If you'd like to get in contact, feel free to <a href="mailto:sanderkaatee@outlook.com">send me an email</a>.
+            </p>
+        </div>
+      </div>
+    <div class="row margin-top-45">
+        <div class="col-md-3">
         <h2>Why this website</h2>
       </div>
       <div class="col-md-9">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
-        </p>
+            I wanted a place to display the things I do, and I hope to add more over time. I also sort of dislike how centralized the Internet has become; most of what we do online is in the hands of a few companies like Google, Microsoft, Meta, etc. I believe the proprietary nature of software owned by companies that play such a crucial role in our society carries significant inherent risk. Therefore, this website serves as a small step away from centralized social media. I built the website using Flask and JavaScript. You can <a href="https://github.com/SanderKaatee/website/">find the source code on my GitHub</a>. It's based on a template by Nicola Tolin; you can <a href="{{ url_for('credits') }}">find out more in the credits section</a>.
+          </p>          
         <br>
-        <p>  
-          Etiam at consectetur sapien, vel laoreet diam. Aliquam erat volutpat. Quisque fermentum purus ac justo fermentum vulputate eu id libero. Donec quam ipsum, malesuada nec interdum in, commodo vel nisl. Aliquam erat volutpat. Donec suscipit molestie urna, at pharetra tortor interdum eget. Ut lobortis viverra ex, quis faucibus sapien iaculis in. Suspendisse laoreet ornare justo sit amet fermentum. Pellentesque non nulla id libero pretium bibendum vel nec dolor. 
-        </p>
-      </div>
-    </div>
-    <div class="row margin-top-45">
-      <div class="col-md-3">
-        <h2>Who am I?</h2>
-      </div>
-      <div class="col-md-9">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
-        </p>
+
+          
       </div>
     </div>
   </div>
