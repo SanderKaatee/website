@@ -1,20 +1,34 @@
 {% extends "base.html" %}
 
 {% block title %}
-  Under Construction | Sander Kaatee
+PROJECTS | Sander Kaatee
 {% endblock %}
 
 {% block content %}
-  <section id="under-construction">
+<section id="portfolio">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Under Construction</h1>
-          <h3>This page is not finished yet, sorry :(</h3>
-          <br>
-          <img src="{{ url_for('static', filename='img/underconstruction.png') }}" alt="Under Construction" width="500" height="480">
+        <ul class="portfolio-sorting list-inline text-center">
+            <li class="portfolio-menu"><a href="#" data-group="web" class="active">This Website</a></li>
+            <li class="portfolio-menu"><a href="#" data-group="acg">Automatic Content Generation</a></li>
+        </ul>
+        <div class="row">
+            <div class="row" data-gallery-title="Gallery">
+                <ul class="list-unstyled" id="grid">
+
+                    {% include 'projectshtml/web.html' %}
+                    {% include 'projectshtml/acg.html' %}
+                    
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </div>    
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script id="filter">
+    shuffleme.setDefaultFilter("web");
+    shuffleme.init();
+</script>
+<script src="{{ url_for('static', filename='js/lightbox-plus-jquery.js') }}"></script>
 {% endblock %}

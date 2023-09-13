@@ -19,15 +19,4 @@ Echoes is built on the Bootstrap framework originally created by Mark Otto ([@md
 
 Copyright 2016 Nicola Tolin. Code released under the Apache 2.0 license.
 
-## Setup and Installation
-
-*For those interested in running this Flask website locally, add setup and installation instructions here.*
-
-## Contributing
-
-*Optional section on how others can contribute to your project.*
-
-## License
-
-*Your license information here.*
 
